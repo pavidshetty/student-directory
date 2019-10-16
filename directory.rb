@@ -1,34 +1,21 @@
 
 students = [
-  "Dr. Hannibal Lecter",
-  "Darth Vader",
-  "Nurse Ratched",
-  "Michael Corleone",
-  "Alex DeLarge",
-  "The Wicked Witch of the West",
-  "Terminator",
-  "Freddy Krueger",
-  "The Joker",
-  "Joffrey Bates",
-  "Norman Bates",
-  "Pavitra Shetty"
+  {name: "Dr. Hannibal Lecter", cohort: :november},
+  {name: "Darth Vader", cohort: :november},
+  {name: "Nurse Ratched", cohort: :november},
+  {name: "Michael Corleone", cohort: :november},
+  {name: "Alex DeLarge", cohort: :november},
+  {name: "The Wicked Witch of the West", cohort: :november},
+  {name: "Terminator", cohort: :november},
+  {name: "Freddy Krueger", cohort: :november},
+  {name: "The Joker", cohort: :november},
+  {name: "Joffrey Bates", cohort: :november},
+  {name: "Norman Bates", cohort: :november},
+  {name: "Pavitra Shetty", cohort: :november}
 ]
-def print_header
-puts "The students of Villains Academy"
-puts "---------------"
-end
 
-def print(name)
-name.each do |name|
-  puts name
+def print(students)
+  students.each do |student|
+    puts "#{student[:name]} (#{student[:cohort]} cohort)"
+  end
 end
-end
-
-
-def print_footer(name)
-puts "overall we have #{name.count} great students."
-end
-
-print_header
-print(students)
-print_footer(students)
