@@ -10,3 +10,6 @@ puts "Terminator"
 puts "Freddy Krueger"
 puts "The Joker"
 puts "Joffrey Bates"
+print "Overall, we have "
+print 11
+print " great students "
